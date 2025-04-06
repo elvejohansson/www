@@ -1,0 +1,23 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@import "tailwindcss";
+
+html {
+  font-size: 15px;
+  letter-spacing: 0.25px;
+
+  background: #fcfcfc;
+  color: #222;
+
+  font-family: "Roboto", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background: #222;
+    color: #fcfcfc;
+  }
+}
