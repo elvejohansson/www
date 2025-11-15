@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "packageManager": "pnpm@10.7.0",
+  "packageManager": "pnpm@10.22.0",
   "scripts": {
     "start:dev": "astro dev",
     "build": "astro build",
