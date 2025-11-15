@@ -7,20 +7,22 @@ const posts = (await getCollection("posts")).sort(
 );
 ---
 
-<Layout title="Elve - Posts">
+<Layout>
   <div class="flex justify-between items-center mb-8">
-    <h1>Posts</h1>
-    <div class="flex gap-4">
+    <div class="flex gap-4 font-bold">
       <a href="/">Home</a>
       <a href="/p">Posts</a>
     </div>
   </div>
 
-  <ul class="list-disc mt-2">
+  <ul class="mt-2">
     {
       posts.map((post) => (
-        <li class="ml-4">
-          <a href={`/p/${post.id}`}>{post.data.title}</a>
+        <li class="mb-1">
+          <a href={`/p/${post.id}`}>
+            {post.data.title} -{" "}
+            {new Date(post.data.created).toLocaleDateString("se")}
+          </a>
         </li>
       ))
     }
